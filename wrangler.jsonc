@@ -1,0 +1,19 @@
+/**
+ * For more details on how to configure Wrangler, refer to:
+ * https://developers.cloudflare.com/workers/wrangler/configuration/
+ */
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "ot-cpace",
+	"main": "src/index.ts",
+	"compatibility_date": "2025-03-27",
+	"observability": {
+		"enabled": true
+	},
+	"kv_namespaces": [
+		{
+		"binding": "USERS_NOTIFICATION_CONFIG",
+		"id": "53e52fbe770d4acfb97e0714b5a94a46"
+		}
+	]
+}
